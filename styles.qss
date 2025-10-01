@@ -1,0 +1,164 @@
+/* === CSS "Переменные" через комментарии === */
+/*
+primary_color: #222222
+secondary_color: #2D2D2D
+accent_color: #5D8BF4
+accent_color_light: #87CEEB
+accent_color_pressed: #456FCC
+text_primary: #F0F0F0
+text_secondary: #E0E0E0
+border_default: #5A5A5A
+background_secondary: #404040
+*/
+
+/* === Общие стили для всего приложения === */
+QWidget {
+    background-color: #222222;
+    color: #F0F0F0;
+    font-family: "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+
+/* === QLabel === */
+QLabel {
+    color: #F0F0F0;
+}
+
+/* === Стили для заголовков === */
+QLabel[class="title"] {
+    color: #5D8BF4;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+}
+
+QLabel[class="card_section_title"] {
+    color: #87CEEB;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* === Поля ввода, текстовые редакторы, выпадающие списки === */
+QLineEdit, QTextEdit, QComboBox {
+    background-color: #404040;
+    color: #FFFFFF;
+    border: 1px solid #5A5A5A;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* === Кнопки === */
+QPushButton {
+    background-color: #404040;
+    color: #F0F0F0;
+    border: 2px solid #5D8BF4;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #5D8BF4;
+    color: #2D2D2D;
+}
+
+QPushButton:pressed {
+    background-color: #456FCC;
+    border: 2px solid #5D8BF4;
+}
+
+/* === Списки (QListWidget) и их элементы === */
+QListWidget {
+    background-color: #404040;
+    border: 1px solid #5A5A5A;
+    border-radius: 5px;
+    color: #F0F0F0;
+    font-size: 24px;
+}
+
+QListWidget::item {
+    background-color: #404040;
+    color: #F0F0F0;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin: 2px 0;
+}
+
+QListWidget::item:hover {
+    background-color: #5A5A5A;
+}
+
+QListWidget::item:selected {
+    background-color: #5D8BF4;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+/* === Ссылки === */
+QLabel[class="clickable"] {
+    color: #87CEEB;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+QLabel[class="clickable"]:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* === Специфика для QComboBox === */
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: none;
+}
+
+/* Стиль выпадающего списка элементов */
+QComboBox QAbstractItemView {
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    selection-background-color: #404040;
+    border: 1px solid #5D8BF4;
+    border-radius: 0px;
+}
+
+/* === Стили для сообщений (status_label) по ObjectName === */
+QLabel#status_label_success {
+    color: #6FCF97;
+    font-weight: bold;
+}
+
+QLabel#status_label_error {
+    color: #EB5757;
+    font-weight: bold;
+}
+
+/* === Стили для крупного текста (карточки) === */
+QLabel[class="main_character"] {
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 10px 0;
+}
+
+QLabel[class="card_text"] {
+    font-size: 18px;
+    color: #E0E0E0;
+}
+
+/* === Гиперссылки внутри QLabel === */
+QLabel a {
+    color: #7A9DFF;
+    text-decoration: underline;
+}
+
+QLabel a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}

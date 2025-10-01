@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Database
+*.db
+*.sqlite
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# OS
+.DS_Store
+Thumbs.db
